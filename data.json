@@ -1,0 +1,13 @@
+{
+	"pizza": {
+		"meat": 12.09,
+		"pepperoni": 15.10,
+		"supreme": 10.00,
+		"cheese": 9.99,
+		"chicken": 25.00,
+		"veggie": 18.30,
+		"margherita": 15.68,
+		"canadian": 12.38,
+		"bbq": 5.56
+	}
+}

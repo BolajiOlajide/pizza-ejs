@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order Pizza!</title>
+  </head>
+
+  <body>
+    <h1> Order Pizza </h1>
+    <form action="/order" method="POST">
+      <h3>User Information</h3>
+      <input type="text" name="fullName" size="20" placeholder="Enter your full name" style="padding-bottom:10px;" required /> <br />
+      <input type="text" name="phone" size="11" placeholder="Enter your phone number" style="padding-bottom:10px;" required /> <br />
+      <textarea name="address" rows="4" cols="50" placeholder="Enter your address" required></textarea>
+      <hr />
+      <h3>Pizza Information</h3>
+
+      <h4>1. Choose your pizza</h4>
+      <select name="pizzaType">
+        <option value="meat">Meat</option>
+        <option value="pepperoni">Pepperoni</option>
+        <option value="supreme">Supreme</option>
+        <option value="hawaian">Hawaian</option>
+        <option value="cheese">Cheese</option>
+        <option value="chicken">Chicken</option>
+        <option value="veggie">Veggie</option>
+        <option value="margherita">Margherita</option>
+        <option value="canadian">Canadian</option>
+        <option value="bbq">BBQ</option>
+      </select>
+
+      <h4>2. Choose your Pizza Size</h4>
+      <input type='radio' name='size' value="personal">Personal - 4 slices</input> <br/>
+      <input type='radio' name='size' value="9in">9" Small - 6 slices</input> <br/>
+      <input type='radio' name='size' value="12in">12" Small - 8 slices</input> <br/>
+      <input type='radio' name='size' value="14in">14" Small - 12 slices</input> <br/>
+
+      <h4>3. Choose your crust:</h4>
+      <input type='radio' name='crust' value="thin-crust">Thin and Crispy</input> <br/>
+      <input type='radio' name='crust' value="homestyle-crust">Homestyle Crust</input> <br/>
+      <input type='radio' name='crust' value="pan-pizza">Pan Pizza</input> <br/>
+      <input type='radio' name='crust' value="stuffed-crust">Stuffed Crust</input> <br/>
+      <input type='radio' name='crust' value="multi-grain">Multi Grain</input> <br/>
+      <br/>
+
+      <h4>4.Select the quantity of Pizza you'd like to purchase</h4>
+      <input type="number" name="quantity" required />
+
+      <h4>5. Choose your topping:</h4>
+       <input type="checkbox" name="meat" value="peperoni">Pepperoni</input><br/>
+       <input type="checkbox" name="meat" value="crumble">Crumble</input><br/>
+       <input type="checkbox" name="meat" value="bacon">Bacon</input><br/>
+       <input type="checkbox" name="meat" value="ham">Ham</input><br/>
+       <input type="checkbox" name="meat" value="grilled-chicken">Grilled Chicken Breast</input><br/>
+       <input type="checkbox" name="meat" value="italian-sausage">Italian Sausage</input><br/>
+       <input type="checkbox" name="meat" value="mild-sausage">Mild Sausage</input><br/>
+       <input type="checkbox" name="meat" value="beef">Beef</input><br/>
+       <input type="checkbox" name="meat" value="smokey-bacon">Smokey Maple Bacon</input><br/>
+
+      <hr />
+      <section>
+        <input type="submit" value="make order" />
+        <input type="reset" />
+      </section>
+    </form>
+  </body>
+</html>
