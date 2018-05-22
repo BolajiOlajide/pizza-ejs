@@ -1,0 +1,12 @@
+{
+    "fullName": "Bolaji Emmanuel Olajide",
+    "phone": "8101644645",
+    "address": "471 Mundet Pl",
+    "pizzaType": "hawaian",
+    "pizzaSize": "9in",
+    "crust": "homestyle-crust",
+    "quantity": "11",
+    "topping": ["peperoni", "bacon", "ham", "mild-sausage", "beef"],
+    "total": 146.91999999999996,
+    "_locals": {}
+}

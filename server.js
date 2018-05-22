@@ -1,12 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+
 const PriceCalculator = require('./pricing');
+const saveToJson = require('./saveToJson');
 
 const app = express();
 
 
 app.engine('ejs', require('ejs').renderFile);
 app.set('view engine', 'ejs');
+
+let globalOrder;
 
 // parse application/json
 app.use(bodyParser.json());
@@ -20,12 +24,11 @@ app.listen(app.get('port'),function() {
 });
 
 app.get('/', function(req,res) {
-  res.render('index');
+  return res.render('index');
 });
 
 app.post('/order', function(req,res) {
   const payload = req.body;
-  console.log(payload);
 
   if(!payload.topping) {
     payload['topping'] = []
@@ -34,5 +37,11 @@ app.post('/order', function(req,res) {
   }
   const total = new PriceCalculator(payload).calculateTotal();
   payload['total'] = total;
-  res.render('order', payload);
+  globalOrder = payload;
+  return res.render('order', payload);
+});
+
+app.post('/order/confirm', function(req, res) {
+  saveToJson(globalOrder);
+  return res.render('success');
 });
