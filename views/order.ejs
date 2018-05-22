@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order Confirmation!</title>
+  </head>
+  <body>
+    <h1>Hello, <%=fullName%></h1>
+    <h3>Phone: <%=phone%></h3>
+    <h3>Address: <%=address%></h3>
+    <hr />
+    <form action="/order/confirm" method="POST">
+      <h3>Below is the detail of your order:</h3>
+      <p>Pizza Type: <%=pizzaType%></p>
+      <p>Size: <%=pizzaSize%></p>
+      <p>Crust: <%=crust%></p>
+      <p>Quantity: <%=quantity%></p>
+      <% if(topping.length) { %>
+        <h4>Topping</h4>
+        <% for (var i = 0; i < topping.length; i++) { %>
+          <p><%=topping[i]%></p>
+        <% } %>
+        <br />
+      <% } %>
+      <hr />
+      <h1>Total: $<%=total%></h1>
+      <hr />
+      <section>
+        <input type="submit" value="CONFIRM ORDER" />
+        <input type="reset" value="CANCEL ORDER" href="/" />
+      </section>
+    </form>
+  </body>
+</html>
