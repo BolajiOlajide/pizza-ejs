@@ -1,13 +1,75 @@
 {
 	"pizza": {
-		"meat": 12.09,
-		"pepperoni": 15.10,
-		"supreme": 10.00,
-		"cheese": 9.99,
-		"chicken": 25.00,
-		"veggie": 18.30,
-		"margherita": 15.68,
-		"canadian": 12.38,
-		"bbq": 5.56
+		"meat": {
+			"size": {
+				"personal": 12.10,
+				"9in": 15.23,
+				"12in": 18.34,
+				"14in": 20.01
+			},
+			"crust": {
+				"thin-crust": 0.40,
+				"homestyle-crust": 0.83,
+				"pan-pizza": 0.93,
+				"stuffed-crust": 1.02,
+				"multi-grain": 2.34
+			}
+		},
+		"pepperoni": {
+			"size": {
+				"personal": 10.34,
+				"9in": 9.23,
+				"12in": 12.34,
+				"14in": 11.01
+			},
+			"crust": {
+				"thin-crust": 1.40,
+				"homestyle-crust": 0.33,
+				"pan-pizza": 0.53,
+				"stuffed-crust": 2.52,
+				"multi-grain": 2.55
+			}
+		},
+		"supreme": {
+			"size": {
+				"personal": 33.10,
+				"9in": 19.23,
+				"12in": 12.34,
+				"14in": 22.01
+			},
+			"crust": {
+				"thin-crust": 1.40,
+				"homestyle-crust": 1.83,
+				"pan-pizza": 1.93,
+				"stuffed-crust": 4.02,
+				"multi-grain": 5.34
+			}
+		},
+		"hawaian": {
+			"size": {
+				"personal": 14.10,
+				"9in": 8.23,
+				"12in": 8.34,
+				"14in": 17.01
+			},
+			"crust": {
+				"thin-crust": 3.40,
+				"homestyle-crust": 4.83,
+				"pan-pizza": 2.93,
+				"stuffed-crust": 5.02,
+				"multi-grain": 8.34
+			}
+		}
+	},
+	"topping": {
+		"peperoni": 0.03,
+		"crumble": 0.34,
+		"bacon": 0.23,
+		"ham": 1.23,
+		"grilled-chicken": 2.34,
+		"italian-sausage": 2.21,
+		"mild-sausage": 1.23,
+		"beef": 0.54,
+		"smokey-bacon": 0.87
 	}
 }

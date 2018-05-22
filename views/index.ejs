@@ -23,22 +23,18 @@
         <option value="pepperoni">Pepperoni</option>
         <option value="supreme">Supreme</option>
         <option value="hawaian">Hawaian</option>
-        <option value="cheese">Cheese</option>
-        <option value="chicken">Chicken</option>
-        <option value="veggie">Veggie</option>
-        <option value="margherita">Margherita</option>
-        <option value="canadian">Canadian</option>
-        <option value="bbq">BBQ</option>
       </select>
 
       <h4>2. Choose your Pizza Size</h4>
-      <input type='radio' name='size' value="personal">Personal - 4 slices</input> <br/>
-      <input type='radio' name='size' value="9in">9" Small - 6 slices</input> <br/>
-      <input type='radio' name='size' value="12in">12" Small - 8 slices</input> <br/>
-      <input type='radio' name='size' value="14in">14" Small - 12 slices</input> <br/>
+      <select name="pizzaSize" required>
+        <option value="personal">Personal - 4 slices</option>
+        <option value="9in">9" Small - 6 slices</option>
+        <option value="12in">12" Small - 8 slices</option>
+        <option value="14in">14" Small - 12 slices</option>
+      </select>
 
       <h4>3. Choose your crust:</h4>
-      <input type='radio' name='crust' value="thin-crust">Thin and Crispy</input> <br/>
+      <input type='radio' name='crust' value="thin-crust" checked>Thin and Crispy</input> <br/>
       <input type='radio' name='crust' value="homestyle-crust">Homestyle Crust</input> <br/>
       <input type='radio' name='crust' value="pan-pizza">Pan Pizza</input> <br/>
       <input type='radio' name='crust' value="stuffed-crust">Stuffed Crust</input> <br/>
@@ -49,15 +45,15 @@
       <input type="number" name="quantity" required />
 
       <h4>5. Choose your topping:</h4>
-       <input type="checkbox" name="meat" value="peperoni">Pepperoni</input><br/>
-       <input type="checkbox" name="meat" value="crumble">Crumble</input><br/>
-       <input type="checkbox" name="meat" value="bacon">Bacon</input><br/>
-       <input type="checkbox" name="meat" value="ham">Ham</input><br/>
-       <input type="checkbox" name="meat" value="grilled-chicken">Grilled Chicken Breast</input><br/>
-       <input type="checkbox" name="meat" value="italian-sausage">Italian Sausage</input><br/>
-       <input type="checkbox" name="meat" value="mild-sausage">Mild Sausage</input><br/>
-       <input type="checkbox" name="meat" value="beef">Beef</input><br/>
-       <input type="checkbox" name="meat" value="smokey-bacon">Smokey Maple Bacon</input><br/>
+       <input type="checkbox" name="topping" value="peperoni">Pepperoni</input><br/>
+       <input type="checkbox" name="topping" value="crumble">Crumble</input><br/>
+       <input type="checkbox" name="topping" value="bacon">Bacon</input><br/>
+       <input type="checkbox" name="topping" value="ham">Ham</input><br/>
+       <input type="checkbox" name="topping" value="grilled-chicken">Grilled Chicken Breast</input><br/>
+       <input type="checkbox" name="topping" value="italian-sausage">Italian Sausage</input><br/>
+       <input type="checkbox" name="topping" value="mild-sausage">Mild Sausage</input><br/>
+       <input type="checkbox" name="topping" value="beef">Beef</input><br/>
+       <input type="checkbox" name="topping" value="smokey-bacon">Smokey Maple Bacon</input><br/>
 
       <hr />
       <section>
